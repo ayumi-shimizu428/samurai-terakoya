@@ -1,0 +1,138 @@
+html {
+    font-family: 'Crimson Text', serif;
+    color:#2d2d2d;
+}
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.logo {
+    width: 110px;
+}
+/* ヘッダー */
+/* メインビジュアル */
+#header {
+    width: 90vw;
+    margin: 55px 62px 0 62px;
+}
+#header > .mainvisual {
+    height: 83vh;
+}
+
+.container {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ナビゲーション */
+nav {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+nav > a {
+    margin-left: 30px;
+    color:#2d2d2d;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+nav > a:nth-child(1){
+    margin-left: 0;
+    margin-right: 30px;
+}
+nav > a:link{
+    color: #2d2d2d;
+}
+nav > a:visited{
+    color: #2d2d2d;
+}
+
+/* コンテンツ */
+main {
+    margin-top: 40px;
+}
+section {
+    display: flex;
+    align-items: center;
+}
+
+.img {
+    width: 50%;
+}
+.img > img {
+    width: 100%;
+}
+.text {
+    width: 50%;
+    padding: 70px;
+}
+h2 {
+    font-weight: lighter;
+    margin-bottom: 5px;
+}
+.text > p {
+    margin-top: 30px;
+}
+section {
+    margin-bottom: 60px;
+}
+
+/* フッター */
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+footer > span {
+    font-size: 0.85rem;
+}
+
+/* SP */
+@media screen and (max-width:767px){
+/* メインビジュアル */
+#header {
+    margin: 0;
+    width: 100vw;
+}
+#header > .mainvisual {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+}
+/* ナビゲーション */
+nav {
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+nav > a {
+    margin-left: 20px;
+}
+
+/* コンテンツ */
+section {
+    flex-direction: column;
+}
+.img {
+    width: auto;
+}
+.text {
+    width: auto;
+    padding: 0;
+}
+#work > .text {
+    order: 2;
+}
+#work > .img {
+    order: 1;
+}
+
+/* フッター */
+.container {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+}
