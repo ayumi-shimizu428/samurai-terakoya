@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <title>Ayumi Shimizu Portfoliosite</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="WEBデザイナー清水あゆみのポートフォリオサイト">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
+    <script src="js/jquery.arctext.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/そらforポートフォリオ.jpg" alt="空の写真">
+        <div id="title">
+            <span id="arch">Welcome to my portfolio</span>
+            <script type="text/javascript">
+                $('#arch').arctext({ radius: 700 });
+            </script>
+            <h1>Ayumi Shimizu</h1>
+        </div>
+        <nav>
+            <a href="About.html">About</a>
+            <a href="#service">Service</a>
+            <a href="works.html">Works</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Service</h2>
+        <div id="service">
+            <div>
+                <h3>コーディング</h3>
+                <img class="service-photo" src="images/コーディング.jpg" alt="パソコンの写真">
+                <p class="description">
+                    HTML・CSSを使用して、デザインを忠実に再現します。<br>また、適切な箇所に動きを取り入れたり、スマートフォンにも対応したコーディングを行ったりすることで、見やすいサイトづくりを心がけています。
+                </p>
+            </div>
+            <div>
+                <h3>デザイン</h3>
+                <img class="service-photo" src="images/デザイン.jpg" alt="スケッチブック">
+                <p class="description">
+                    伝えたいことが伝わりやすい、効果的なデザインを目指します。<br>ヒアリングをもとに、使いやすさを意識しつつ、クライアント様の目的が達成できるようデザインいたします。</p>
+            </div>
+        </div>
+        <h2>Works</h2>
+        <div id="works">
+            <div>
+                <a href="works.html#jisyuu"><img class="works-photo" src="images/もくもく会バナー.jpg" alt="学習サイトのバナー"></a>
+                <p>侍エンジニア　オンライン自習室バナー制作コンペ　採用作品</p>
+            </div>
+            <div>
+                <a href="works.html#chat"><img class="works-photo" src="images/chatgptバナー.jpg" alt=""></a>
+                <p>侍エンジニア　ChatGPTセミナーバナー制作コンペ　採用作品</p>
+            </div>
+            <div>
+                <a href="works.html#portfolio"><img class="works-photo" src="images/Ayumi Shimizu Portfoliosite .jpg" alt=""></a>
+                <p>ポートフォリオサイト　自作品</p>
+            </div>
+        </div>
+        <div id="contact">
+            <h2>Contact</h2>
+            <p class="contact">ご依頼・ご相談等<br>お気軽にお問い合わせください。</p>
+            <form action="https://api.staticforms.xyz/submit" method="post">
+                <input type="text" name="honeypot" style="display:none">
+                <input type="hidden" name="accessKey" value="e11291ef-1190-43b1-8625-2603fade88a3">
+                <input type="hidden" name="subject" value="お問い合わせ" />
+                <input type="hidden" name="replyTo" value="ayumi.shimizu.4@gmail.com">
+                <input type="hidden" name="redirectTo" value="">
+                <div>
+                    <div class="form">
+                        <div>
+                            <label class="label">Name</label>
+                        </div>
+                        <div>
+                            <input class="input" type="text" name="name" style="width: 400px; height: 30px;">
+                        </div>
+                    </div>
+                    <div class="form">
+                        <div>
+                            <label class="label">Email</label>
+                        </div>
+                        <div>
+                            <input class="input" type="text" name="email" style="width: 400px; height: 30px;">
+                        </div>
+                    </div>
+                </div>
+                <div id="message">
+                    <div>
+                        <label class="label">Message</label>
+                    </div>
+                    <div>
+                        <textarea class="input" name="message" style="width: 400px; height: 100px;"></textarea>
+                    </div>
+                    <div>
+                        <input id="submit" type="submit">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

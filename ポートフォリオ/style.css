@@ -1,0 +1,192 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    max-width: 1080px;
+    min-width: 960px;
+    margin: 0 auto;
+    background-color: #dce9f7;
+}
+
+/* ヘッダー */
+header {
+    position: relative;
+    height: 900px;
+}
+
+header > img {
+    position: absolute;
+    top: -300px;
+    width: 100%;
+}
+
+#title{
+    font-family: 'Zen Old Mincho', serif;
+    color: #1d5999;
+    text-align: center;
+}
+
+#arch {
+    position: absolute;
+    top: 430px;
+    left: 200px;
+    font-size: 60px;
+}
+
+#title > h1 {
+    position: absolute;
+    top: 530px;
+    left: 100px;
+    font-size: 120px;
+}
+ /* ナビゲーション */
+nav {
+    font-size: 20px;
+    position: absolute;
+    top: 750px;
+    left: 320px;
+    border-top: solid 2px #1d5999;
+    border-bottom: solid 2px #1d5999;
+}
+
+nav > a {
+    display: inline-block;
+    color: #1d5999;
+    text-decoration: none;
+    margin: 20px;
+}
+
+/* サービス */
+h2 {
+    font-size: 40px;
+    color: #1d5999;
+}
+h3 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+main > div {
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+
+#service {
+    display: flex;
+}
+
+#service > div {
+    width: 50%;
+    padding: 10px;
+}
+
+.service-photo {
+    width: 100%;
+    height: 350px;
+    border-radius: 20% 20% 0 0;
+}
+
+.description {
+    padding: 15px;
+    background-color: aliceblue;
+    height: 150px;
+    border-radius: 0 0 20% 20%;
+}
+
+/* Works */
+#works {
+    display: flex;
+    justify-content: space-between;
+}
+
+#works > div {
+    width: 30%;
+}
+
+.works-photo {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+ /* コンタクト */
+ .contact {
+    margin: 20px auto;
+ }
+
+ form {
+    display: flex;
+ }
+
+ form > div {
+    width: 50%;
+    padding-left: 60px;
+ }
+
+ .label {
+    font-size: 20px;
+ }
+
+.input {
+    background-color: white;
+}
+
+.form {
+    margin-bottom: 20px;
+}
+
+#message {
+    position: relative;
+}
+
+#submit {
+    position: absolute;
+    top: 130px;
+    left: 410px;
+    background-color: white;
+    padding: 0 10px;
+}
+
+#send {
+    background-color: aliceblue;
+    padding-bottom: 5px;
+}
+
+#send > p {
+    text-align: center;
+}
+
+
+/* Worksのページ */
+#box {
+    background-color: aliceblue;
+    padding: 30px;
+}
+
+.naiyou {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.left {
+    width: 40%;
+    object-fit: contain;
+    margin-right: 30px;
+}
+
+.right {
+    width: 40%;
+    object-fit: contain;
+    margin-left: 30px;
+}
+
+h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* Aboutのページ */
+h5 {
+    font-size: 30px;
+}
